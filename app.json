@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "BBB Mobil",
-    "slug": "bbb-mobil-v2.0",
+    "slug": "bbb-mobil",
     "scheme": "BBB Mobil",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,19 +12,35 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.capellax.bbbmobil"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.capellax.bbbmobil"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-router", "expo-font", "expo-secure-store"]
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ca3e6e11-b1e4-4c07-8b70-0eb01dbb8cfe"
+      }
+    }
   }
 }
